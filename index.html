@@ -11,16 +11,46 @@
   <h1 id="title">freeCodeCamp Survey Form</h1>
   <p id="description">Thank you for taking the time to help us improve the platform</p>
   <form id="survey-form">
-    <label id="name-label"></label>
-    <input type="text" id="name" placeholder="Enter name" /></br>
-    <label id="email-label"></label>
-    <input type="email" id="email" placeholder="Enter email" /></br>
-    <label id="number-label"></label>
-    <input type="number" id="number" min="2" max="10" placeholder="Enter number" /></br>
+
+    <label id="name-label">
+      <input type="text" id="name" required="" placeholder="Enter name" /></br>
+    </label>
+    
+    
+    <label id="email-label">    
+      <input type="email" id="email" required="" placeholder="Enter email" /></br>
+    </label>
+
+    <label id="number-label">
+      <input type="number" id="number" min="2" max="10" placeholder="Enter number" /></br>
+    </label>
+    
+    
     <select id="dropdown">
       <option>Test 1</option>
       <option>Test 2</option>
     </select>
+    <label for="Definitely">
+      <input type="radio" Name="recommendation" id="Definitely" value="Definitely">
+      Definitely
+    </label>
+    <label for="maybe">
+      <input type="radio" Name="recommendation" id="maybe" value="maybe">
+      Maybe
+    </label>
+    <label for="notsure">
+      <input type="radio" Name="recommendation" id="notsure" value="notsure">
+      Not Sure
+    </label>
+    <label>
+      <input type="checkbox" name="frnt" value="front">
+      Front End 
+    </label>
+    <label>
+      <input type="checkbox" name="frnt" value="front">
+    </label>
+    <textarea></textarea>
+    <button id="submit">submit</button>
   </form>
 </body>
 
